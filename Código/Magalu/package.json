@@ -1,0 +1,23 @@
+{
+  "name": "magalu",
+  "version": "1.0.0",
+  "description": "Teste QA",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igrbraga/Vaga-Est-gio-QA-Requisitos---Atividade-T-cnica.git"
+  },
+  "author": "Igor Braga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igrbraga/Vaga-Est-gio-QA-Requisitos---Atividade-T-cnica/issues"
+  },
+  "homepage": "https://github.com/igrbraga/Vaga-Est-gio-QA-Requisitos---Atividade-T-cnica#readme",
+  "devDependencies": {
+    "cypress": "^10.8.0",
+    "mochawesome": "^7.1.3"
+  }
+}
