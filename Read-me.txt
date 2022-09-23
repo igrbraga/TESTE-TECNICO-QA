@@ -1,0 +1,44 @@
+Instruções de funcionamento do código (por interface).
+
+
+1	> Iniciar o Visual Studio Code
+2	> npm run test no console
+3	> Utilizar navegador Electron (Padrão do Cypress)
+4	> Rodar o teste.
+
+
+Instruções de funcionamento por console:
+
+1	> Iniciar o Visual Studio Code
+2	> npx cypress run no console
+3	> Após o término, é possível conferir um relatório na subpasta "results" nomeada como "mochawesome_xxx.html"
+
+Configuração .json do cypress:
+
+
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  reporter: "mochawesome",
+  reporterOptions: {
+    reportDir: "cypress/results",
+    overwrite: false,
+    html: true,
+    json: false,
+  },
+  e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+  },
+});
+
+O reporter utilizado foi o mochawesome.
+
+O projeto de teste de caixa preta foi feito e separado em pastas, como segue o repositório.
+
+
+
+
+
+
